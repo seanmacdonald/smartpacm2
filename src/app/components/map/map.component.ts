@@ -9,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class MapComponent implements OnInit {
 
   //location: AngularFireList<any>; 
-  latitude:number; 
-  longitude:number;
+  //latitude:number; 
+  //longitude:number;
+  latitude = 51.678418; 
+  longitude = 7.809007; 
 
   /*constructor(db: AngularFireDatabase){
     this.location = db.list('/location');
@@ -33,8 +35,8 @@ export class MapComponent implements OnInit {
     }*/
 
   ngOnInit() {
-    this.latitude = 51.678418;
-    this.longitude = 7.809007; 
+    this.latitude = 49.243420;
+    this.longitude = -123.171805; 
     console.log("ngOnInit done"); 
   }
   
