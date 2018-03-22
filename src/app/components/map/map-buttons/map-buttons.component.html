@@ -1,0 +1,16 @@
+<div class="btn-group" style="width:100%">
+  <button style="width:50%"(click)="FindSmartPac()" >Find My SmartPac</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:50%" (click)="LockUnlockSmartPac()">Lock My SmartPac</button>
+</div>
+
+<h6 class="text-center">Empployee Register </h6><br/>
+<table class ="table table-sm table-hover">
+  <tr *ngFor="let data of dataList">
+    <td>{{data.lat}}</td>
+    <td>{{data.locked}}</td>
+    <td>{{data.long}}</td>
+  </tr>
+
+</table>

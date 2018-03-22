@@ -1,8 +1,11 @@
-<div class="btn-group" style="width:100%">
-  <!--<a class="active" href="#FindSmartPac">Find My SmartPac!</a>
-  <a href="#lockUnlock">Lock</a> --> 
-  <button style="width:50%" (click)="FindSmartPac()">Find My SmartPac</button>
-  <button style="width:50%" (click)="LockUnlockSmartPac()">Lock My SmartPac</button>
+<div class="text-center">
+  <h2 class="jumbotron">SmartPac</h2>
 </div>
-
-<agm-map [latitude] = "latitude" [longitude] = "longitude"> </agm-map>
+<div class="row">
+  <div class="col-md-4">
+    <app-map-buttons></app-map-buttons>
+  </div>
+  <div class="col-md-8">
+    <app-map-view></app-map-view>
+  </div>
+</div>
