@@ -23,7 +23,7 @@ export class MapButtonsComponent implements OnInit {
       });
     });
     console.log("sean"); 
-    console.log(x); 
+    //console.log(this.dataList[0].lat); 
     console.log("sean"); 
   }
 
