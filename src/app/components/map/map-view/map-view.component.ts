@@ -11,8 +11,10 @@ export class MapViewComponent implements OnInit {
 
   dataList : MapButtons[]; 
   data: any; 
-  latitude = 49.260933; 
-  longitude = -123.240849; 
+  //latitude = 49.260933; 
+  //longitude = -123.240849; 
+  latitude = 49.675403;
+  longitude = -112.780730; 
   constructor(private mapButtonsService : MapButtonsService) { }
 
   ngOnInit() {
@@ -25,6 +27,7 @@ export class MapViewComponent implements OnInit {
         console.log(this.data);  
         y["$key"] = element.key;
         this.dataList.push(y as MapButtons);  
+        console.log(this.dataList); 
       });
     });
     console.log("sean"); 
