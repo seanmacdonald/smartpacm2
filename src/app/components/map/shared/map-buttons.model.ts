@@ -1,7 +1,8 @@
 export class MapButtons {
     $key : string; 
     lat : number; 
-    locked : string;
+    locked : number;
     long : number;  
+    update : number; 
 
 }

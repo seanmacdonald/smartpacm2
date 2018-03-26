@@ -28,14 +28,18 @@ export class MapButtonsComponent implements OnInit {
   }
 
   //NOTE: There is not parameter for this method because it is not a submit button 
-  //this method should just make use of the getData method 
-  FindSmartPac(){
-    console.log("Show SmartPac on the map"); 
+  FindSmartPac(dt : MapButtons){
+    //change the udpate value to 1 on the database
+    this.mapButtonsService.selectedData = Object.assign({},dt); //this makes a copy of the dt object 
+    this.mapButtonsService.selectedData.update = 1; 
+    this.mapButtonsService.updateData(this.mapButtonsService.selectedData); 
   }
 
-  //This method should make use of the updateData method 
-  LockUnlockSmartPac(){
-    console.log("Lock/Unlock SmartPac"); 
+
+  LockUnlockSmartPac(dt : MapButtons){
+    this.mapButtonsService.selectedData = Object.assign({},dt); //this makes a copy of the dt object 
+    this.mapButtonsService.selectedData.locked = 1; 
+    this.mapButtonsService.updateData(this.mapButtonsService.selectedData); 
   }
 
 }

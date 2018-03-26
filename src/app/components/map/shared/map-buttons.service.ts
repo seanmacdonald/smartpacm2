@@ -18,7 +18,8 @@ export class MapButtonsService {
     this.dataList.push({
       lat: data.lat,
       locked: data.locked,
-      long: data.long
+      long: data.long,
+      update: data.update
     });
   }
 
@@ -26,7 +27,8 @@ export class MapButtonsService {
     this.dataList.update(data.$key,{
       lat: data.lat,
       locked: data.locked,
-      long: data.long
+      long: data.long,
+      update: data.update
     });
   }
 

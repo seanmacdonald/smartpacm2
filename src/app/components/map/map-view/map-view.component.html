@@ -1,8 +1,8 @@
-<p>This is the map-view</p>
-<div *ngFor="let data of dataList">
-    <td>{{data.lat}}</td>
-    <td>{{data.locked}}</td>
-    <td>{{data.long}}</td>
-    <p>{{data.lat}}</p>
-    <agm-map [latitude] = "data.lat" [longitude] = "data.long"> </agm-map>
+<div>
+    <div *ngFor="let data of dataList" >
+    <agm-map [latitude] = "data.lat" [longitude] = "data.long" (mapClick)="onMapClickEvent()" [zoom] = "zoom"> 
+        <agm-marker [latitude] = "data.lat" [longitude] = "data.long">
+        </agm-marker>
+    </agm-map>
+    </div>
 </div>
