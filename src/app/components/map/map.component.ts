@@ -4,7 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import { AngularFirestoreModule, AngularFirestoreCollection, AngularFirestore} from 'angularfire2/firestore'
 import { AngularFireModule,  } from 'angularfire2';
 
-import { MapButtonsService } from './shared/map-buttons.service'
+import { MapButtonsService } from './shared/map-buttons.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -14,13 +15,18 @@ import { MapButtonsService } from './shared/map-buttons.service'
 export class MapComponent implements OnInit {
 
 
-  constructor(private mapButtonsService : MapButtonsService){
+  constructor(private mapButtonsService : MapButtonsService, private router:Router){
     
   }
 
 
   ngOnInit() {
   }
+
+  logoutButtonClick(){
+    this.router.navigate(['']);
+  }
+
 
 
 }

@@ -9,6 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.jumbotron{
+  background: #42cbf4; 
+}
+
 .btn-group button {
     background-color: #4CAF50; /* Green background */
     border: 1px solid green; /* Green border */
@@ -31,4 +35,9 @@ body {
 
   .btn-group button:hover {
     background-color: #265a28;
+  }
+
+  .logout-button{
+    background: white;
+    border: white; 
   }

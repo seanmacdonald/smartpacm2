@@ -1,0 +1,65 @@
+body {
+    background-color: blue;
+    background-image: url('/Users/Rai/Desktop/smartpac/background.png')
+}
+
+.jumbotron{
+    background: #42cbf4; 
+}
+
+
+.form-control{
+	margin: auto;
+	width:400px;
+	border-color: black;
+}
+.form-group{
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.container-fluid{
+    margin: 50 auto;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    border: 2px solid black;
+    background-color: white;
+}
+.title{
+	color: black;
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	padding-bottom: 70px;
+}
+
+.divbutton{
+	margin: auto;
+	width:400px;
+	padding-top: 10px;
+}
+
+.button{
+	width:400px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+}
+
+.button:hover {
+    background-color: #265a28;
+    color: white;
+}
+.center{
+	border-color: black;
+}
+
+#errorMessage{
+	color: red;
+}

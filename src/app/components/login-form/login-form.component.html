@@ -1,13 +1,19 @@
+<div class="container-fluid">
+    <div class="text-center">
+        <h2 class="jumbotron">Find My SmartPac</h2>
+      </div>
+    <img class="pic" [src]="fullImagePath">
+  
+
 <form (submit) = "loginUser($event)">
-  <div class="input">
-    <label>Username</label>
-    <input type="text">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter User Name">
   </div>
-  <div class="input">
-    <label>Password</label>
-    <input type="password">
+  <div class="form-group">
+    <input type="password" id="pass-button" class="form-control" placeholder="Enter Password">
   </div>
-  <div class="input">
-    <input type="submit" value="Login">
+  <div class ="divbutton">
+    <input type="submit" value="Login" class="button">
   </div>
 </form>
+</div>
